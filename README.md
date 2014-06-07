@@ -6,6 +6,7 @@ Simple template inspired by Django html syntax.
 You can assign direct values to a single element for example the label div etc.
 I do not recommend to assign values to the label (title), because I'm not sure if it is effective in SEO with that tag.
 
+hey here Example: [http://codepen.io/mrjopino/pen/LFItr](http://codepen.io/mrjopino/pen/LFItr)
 
 ```js
 // Example: This is included in gumok.js
