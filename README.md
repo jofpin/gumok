@@ -25,7 +25,9 @@ $gumok.root($("h1"), {
 <h1>Hello so used gumok</h1>
 ```
 
-This publication gave me the idea: http://www.html5rocks.com/en/tutorials/webcomponents/template/
+This publication gave me the idea: 
+http://www.html5rocks.com/en/tutorials/webcomponents/template/ 
+https://docs.djangoproject.com/en/dev/topics/templates/
 
 -------------
 
