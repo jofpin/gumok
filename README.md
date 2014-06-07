@@ -8,6 +8,8 @@ I do not recommend to assign values to the label (title), because I'm not sure i
 
 hey here Example: [http://codepen.io/mrjopino/pen/LFItr](http://codepen.io/mrjopino/pen/LFItr)
 
+* View page - [http://mrjopino.github.io/gumok/](http://mrjopino.github.io/gumok/)
+
 ```js
 // Example: This is included in gumok.js
 $gumok.root($("h1"), {
