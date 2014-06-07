@@ -24,6 +24,9 @@ $gumok.root($("h1"), {
 <!-- Result -->
 <h1>Hello so used gumok</h1>
 ```
+
+This publication gave me the idea: http://www.html5rocks.com/en/tutorials/webcomponents/template/
+
 -------------
 
 Copyright, 2014 by [José Pino](http://twitter.com/mrjopino)
