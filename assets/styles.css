@@ -1,0 +1,92 @@
+/*
+* css code
+* Author: @mrjopino
+* Description: Presentation of gumokJS
+*/
+@import url(http://fonts.googleapis.com/css?family=Fredoka+One|Varela+Round|Ubuntu);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'fontawesome', sans-serif;
+}
+
+body {
+  background: #ebebeb;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+}
+
+a {
+  position: relative;
+  color: #669ae1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #39c;
+}
+
+h1 {
+  color: #777e8c;
+  font-weight: normal;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 4.80em;
+  text-align: center;
+  margin-top: 1.20em;
+}
+
+h3,h4,h5 {
+  font-family: "Varela round", sans-serif;
+  color: #707070;
+}
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #707070;
+}
+span {
+  color: #ffd464;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 1em;
+}
+section .icon-github {
+  position: relative;
+  display: block;
+  margin: 4% auto;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  font-size: 3em;
+  font-weight: normal;
+}
+section .icon-github:hover {
+  color: #000;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+[data-library-name]:hover::after {
+  content: attr(data-library-name);
+  font-family: "Varela Round", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  color: #ccc;
+  background: #333;
+  margin: 1.74em auto;
+  width: 7em;
+  font-size: .3em;
+  padding: .1em;
+  border-radius: .4em;
+  height: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, 2em);
+  -moz-transform: translate(-50%, 2em);
+  -ms-transform: translate(-50%, 2em);
+  -o-transform: translate(-50%, 2em);
+  transform: translate(-50%, 2em);
+}
+
