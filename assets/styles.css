@@ -51,6 +51,40 @@ span {
   font-family: "Fredoka One", sans-serif;
   font-size: 1em;
 }
+.btn_download {
+  background-color: #777e8c;
+  -webkit-border-radius: 0.30em;
+  -moz-border-radius: 0.30em;
+  -ms-border-radius: 0.30em;
+  -o-border-radius: 0.30em;
+  border-radius: 0.30em;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Ubuntu", Sans-Serif;
+  margin: 0.9em 0.8em 0;
+  outline: none;
+  padding: 0.80em 1.87em;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.btn_download:hover {
+  background-color: #777e8c;
+  opacity: .8;
+  color: #fff;
+}
+.btn_download:active {
+  -webkit-transform: scale(.96);
+  -moz-transform: scale(.96);
+  -ms-transform: scale(.96);
+  -o-transform: scale(.96);
+  transform: scale(.96);
+}
 section .icon-github {
   position: relative;
   display: block;
@@ -89,4 +123,3 @@ section .icon-github:hover {
   -o-transform: translate(-50%, 2em);
   transform: translate(-50%, 2em);
 }
-
