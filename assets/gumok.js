@@ -50,6 +50,7 @@ $(document).ready(function() {
     "text" : "I think with gumok the world and you can make very nice web app.",
     "author" : "Jos\u00e9 Pino",
     "file" : "gumok.js",
+    "download" : "<a class=\"btn_download\" href=\"https://github.com/mrjopino/gumok/archive/master.zip\">DOWNLOAD</a>",
     "url.github" : "https://github.com/mrjopino/gumok",
     "url.twitter" : "https://twitter.com/mrjopino"
   });
