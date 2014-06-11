@@ -6,11 +6,11 @@
  * Version: 1.0.0
  *
  * Find the project on GitHub: 
- * https://github.com/mrjopino/gumok
+ * https://github.com/jofpin/gumok
  *
  * ============================
  * Copyright, 2014 by Jose Pino
- * https://twitter.com/mrjopino
+ * https://twitter.com/jofpin
  * ============================
  */
 $(document).ready(function() {
@@ -50,9 +50,9 @@ $(document).ready(function() {
     "text" : "I think with gumok the world and you can make very nice web app.",
     "author" : "Jos\u00e9 Pino",
     "file" : "gumok.js",
-    "download" : "<a class=\"btn_download\" href=\"https://github.com/mrjopino/gumok/archive/master.zip\">DOWNLOAD</a>",
-    "url.github" : "https://github.com/mrjopino/gumok",
-    "url.twitter" : "https://twitter.com/mrjopino"
+    "download" : "<a class=\"btn_download\" href=\"https://github.com/jofpin/gumok/archive/master.zip\">DOWNLOAD</a>",
+    "url.github" : "https://github.com/jofpin/gumok",
+    "url.twitter" : "https://twitter.com/jofpin"
   });
   /* End app */
 
