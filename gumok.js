@@ -6,11 +6,11 @@
  * Version: 1.0.0
  *
  * Find the project on GitHub: 
- * https://github.com/mrjopino/gumok
+ * https://github.com/jofpin/gumok
  *
  * ============================
  * Copyright, 2014 by Jose Pino
- * https://twitter.com/mrjopino
+ * https://twitter.com/jofpin
  * ============================
  */
 $(document).ready(function() {
