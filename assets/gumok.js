@@ -14,27 +14,33 @@
  * ============================
  */
 $(document).ready(function() {
-  $gumok = {
+var $gumok = {
     /**
      * @return {undefined}
      * You can assign direct values to a single element for example the label div etc.
      * I do not recommend to assign values to the label (title), because I'm not sure if it is effective in SEO with that tag
      */
     root : function(element, args) {
-      $bodyGum = $(element).html();
+      var $bodyGum = $(element).html();
       $(element).html($gumok.gdef($bodyGum, args));
     },
 
     exptemplate : /\{{|}\}/, /* Expression of template gum */
-    
+
     gdef : function($bodyGum, data) {
-      $unions = $bodyGum.split($gumok.exptemplate);
-      $counter = $unions.length;
-      id = 1;
+      var $unions  = $bodyGum.split($gumok.exptemplate);
+      var $counter = $unions.length;
+      var $mode = "%c";
+      var $consoleCSS = "\
+        color: #777e8c; \
+        font-size: 1.30em; \
+        font-weight: bold; \
+    ";
+      var id = 1;
       for (;id < $counter; id += 2) {
         if (data.hasOwnProperty($unions[id])) {
           $unions[id] = data[$unions[id]];
-          console.log("These using Gumok > Happy code!");
+          console.log($mode + "These using Gumok > Happy code!", $consoleCSS); 
         }
       }
       var segs = $unions.join("");
