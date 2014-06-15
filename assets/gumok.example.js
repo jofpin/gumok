@@ -6,8 +6,7 @@
  * Copyright, 2014 by Jose Pino, @mrjopino
  */
 $(document).ready(function() {
-$gumok={root:function(e,t){$bodyGum=$(e).html();$(e).html($gumok.gdef($bodyGum,t))},exptemplate:/\{{|}\}/,gdef:function(e,t){$unions=e.split($gumok.exptemplate);$counter=$unions.length;id=1;for(;id<$counter;id+=2){if(t.hasOwnProperty($unions[id])){$unions[id]=t[$unions[id]];console.log("These using Gumok > Happy code!")}}var n=$unions.join("");return n}}
-
+var $gumok={root:function(e,t){var n=$(e).html();$(e).html($gumok.gdef(n,t))},exptemplate:/\{{|}\}/,gdef:function(e,t){var n=e.split($gumok.exptemplate);var r=n.length;var i="%c";var s="        color: #777e8c;         font-size: 1.30em;         font-weight: bold;     ";var o=1;for(;o<r;o+=2){if(t.hasOwnProperty(n[o])){n[o]=t[n[o]];console.log(i+"These using Gumok > Happy code!",s)}}var u=n.join("");return u}}
 /* App */
   $gumok.root($("body"), {
     "title" : "This is an example of gumok",
