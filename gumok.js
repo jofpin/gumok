@@ -30,17 +30,11 @@ $(document).ready(function() {
     gdef : function($bodyGum, data) {
       var $unions  = $bodyGum.split($gumok.exptemplate);
       var $counter = $unions.length;
-      var $mode = "%c";
-      var $consoleCSS = "\
-        color: #777e8c; \
-        font-size: 1.30em; \
-        font-weight: bold; \
-    ";
       var id = 1;
       for (;id < $counter; id += 2) {
         if (data.hasOwnProperty($unions[id])) {
           $unions[id] = data[$unions[id]];
-          console.log($mode + "These using Gumok > Happy code!", $consoleCSS); 
+          console.log("These using Gumok > Happy code!"); 
         }
       }
       var segs = $unions.join("");
