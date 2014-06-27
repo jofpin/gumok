@@ -3,7 +3,7 @@
  * gumok.js
  *
  * Simple template inspired by Django html syntax.
- * Version: 1.0.0
+ * Version: 1.0.1
  *
  * Find the project on GitHub: 
  * https://github.com/jofpin/gumok
@@ -14,9 +14,10 @@
  * ============================
  */
 $(document).ready(function() {
+  var app = "[core-app=\""+ nameApp +"\"]";
   var $gumok = {
     /**
-     * @return {undefined}
+     * add var nameApp = "here name your app";
      * You can assign direct values to a single element for example the label div etc.
      * I do not recommend to assign values to the label (title), because I'm not sure if it is effective in SEO with that tag
      */
@@ -43,7 +44,7 @@ $(document).ready(function() {
   };
 
 /* App */
-  $gumok.root($("body"), {
+  $gumok.root($(app), {
     "title" : "This is an example of gumok",
     "description" : "Now create your beautiful web applications :)",
   });
