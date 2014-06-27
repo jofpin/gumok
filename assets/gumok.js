@@ -1,55 +1,8 @@
-/**
- *
- * gumok.js
- *
- * Simple template inspired by Django html syntax.
- * Version: 1.0.0
- *
- * Find the project on GitHub: 
- * https://github.com/jofpin/gumok
- *
- * ============================
- * Copyright, 2014 by Jose Pino
- * https://twitter.com/jofpin
- * ============================
- */
-$(document).ready(function() {
-var $gumok = {
-    /**
-     * @return {undefined}
-     * You can assign direct values to a single element for example the label div etc.
-     * I do not recommend to assign values to the label (title), because I'm not sure if it is effective in SEO with that tag
-     */
-    root : function(element, args) {
-      var $bodyGum = $(element).html();
-      $(element).html($gumok.gdef($bodyGum, args));
-    },
-
-    exptemplate : /\{{|}\}/, /* Expression of template gum */
-
-    gdef : function($bodyGum, data) {
-      var $unions  = $bodyGum.split($gumok.exptemplate);
-      var $counter = $unions.length;
-      var $mode = "%c";
-      var $consoleCSS = "\
-        color: #777e8c; \
-        font-size: 1.30em; \
-        font-weight: bold; \
-    ";
-      var id = 1;
-      for (;id < $counter; id += 2) {
-        if (data.hasOwnProperty($unions[id])) {
-          $unions[id] = data[$unions[id]];
-          console.log($mode + "These using Gumok > Happy code!", $consoleCSS); 
-        }
-      }
-      var segs = $unions.join("");
-      return segs;
-    }
-  };
+ /*! Gumok v1.0.1 | (c) Copyright (c) José Pino, @jofpin | https://github.com/mrjopino/gumok */
+$(document).ready(function(){var app='[core-app="'+nameApp+'"]';var $gumok={root:function(e,t){var n=$(e).html();$(e).html($gumok.gdef(n,t))},exptemplate:/\{{|}\}/,gdef:function(e,t){var n=e.split($gumok.exptemplate);var r=n.length;var i=1;for(;i<r;i+=2){if(t.hasOwnProperty(n[i])){n[i]=t[n[i]];console.log("These using Gumok > Happy code!")}}var s=n.join("");return s}}
 
 /* App */
-  $gumok.root($("body"), {
+    $gumok.root($(app), {
     "title" : "<h1>Gum<span>ok</span></h1>",
     "description" : "Simple template inspired by Django html syntax.",
     "subdescription" : "Has your Web applications, more beautiful with this library!",
