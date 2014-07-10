@@ -20,22 +20,25 @@ $(document).ready(function() {
      * add var nameApp = "here name your app";
      * You can assign direct values to a single element for example the label div etc.
      * I do not recommend to assign values to the label (title), because I'm not sure if it is effective in SEO with that tag
+     * I use http://jsnice.org/ is great!
      */
     root : function(element, args) {
-      var $bodyGum = $(element).html();
-      $(element).html($gumok.gdef($bodyGum, args));
+      var bGum = $(element).html();
+      $(element).html($gumok.gdef(bGum, args)); /* bGum = body gum */
     },
 
     exptemplate : /\{{|}\}/, /* Expression of template gum */
 
-    gdef : function($bodyGum, data) {
-      var $unions  = $bodyGum.split($gumok.exptemplate);
+    gdef : function(bGum, data) {
+      var $unions  = bGum.split($gumok.exptemplate);
       var $counter = $unions.length;
       var id = 1;
       for (;id < $counter; id += 2) {
         if (data.hasOwnProperty($unions[id])) {
           $unions[id] = data[$unions[id]];
           console.log("These using Gumok > Happy code!"); 
+        } else {
+        	console.log("Error in Template");
         }
       }
       var segs = $unions.join("");
