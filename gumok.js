@@ -54,7 +54,7 @@ var Gumok = function() {
         }
       }
       // return
-      return segs = unions.join(this.reset);
+      return unions.join(this.reset);
     }
   };
   
