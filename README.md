@@ -32,6 +32,6 @@ This publication gave me the idea:
 
 -------------
 
-Copyright, 2014 by [José Pino](http://twitter.com/jofpin)
+Copyright, 2014 by [Jose Pino](http://twitter.com/jofpin)
 
 -------------
