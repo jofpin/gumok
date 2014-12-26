@@ -13,8 +13,10 @@
 
 <!-- Example gumokJS -->
 
-<h1>{{title}}</h1>
-<p>{{description}}</p>
+<div id="example">
+  <h1>{{title}}</h1>
+  <p>{{description}}</p>
+</div>
 
 <style type="text/css">
 @import url(http://fonts.googleapis.com/css?family=Fredoka+One|Ubuntu);
@@ -25,19 +27,20 @@ body {
 h1 {
   color: #777e8c;
   font-family: "Fredoka One", sans-serif;
-  font-size: 3.60em;
+  font-size: 4.23em;
   font-weight: normal;
   margin-top: 1.20em;
 }
 p {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
+  font-size: 2em;
   color: #707070;
 }
 </style>
 <script>
 /* example of gumok */
-  Gumok.view("body",{
+  Gumok.view("#example",{
     "title" : "Gumok Example",
     "description" : "Hello so used gumok"
   });
