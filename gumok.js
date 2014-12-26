@@ -3,7 +3,7 @@
  * gumok.js
  *
  * Simple template inspired by Django html syntax.
- * Version: 1.0.1
+ * Version: 1.0.2
  *
  * Find the project on GitHub: 
  * https://github.com/jofpin/gumok
@@ -13,44 +13,52 @@
  * https://twitter.com/jofpin
  * ============================
  */
-$(document).ready(function() {
-  var app = "[core-app=\""+ nameApp +"\"]";
-  var $gumok = {
-    /**
-     * add var nameApp = "here name your app";
-     * You can assign direct values to a single element for example the label div etc.
-     * I do not recommend to assign values to the label (title), because I'm not sure if it is effective in SEO with that tag
-     * I use http://jsnice.org/ is great!
-     */
-    root : function(element, args) {
-      var bGum = $(element).html();
-      $(element).html($gumok.gdef(bGum, args)); /* bGum = body gum */
+var Gumok = function() {
+  return {
+    reset: "",
+    regex: /\{{|}\}/,
+    credit: {
+      name: "Gumok",
+      version: "1.0.2",
+      code: "https://github.com/jofpin/gumok",
+      author: "Jose Pino",
+      twitter: "@jofpin",
+      email: "jofpin@gmail.com"
     },
-
-    exptemplate : /\{{|}\}/, /* Expression of template gum */
-
-    gdef : function(bGum, data) {
-      var $unions  = bGum.split($gumok.exptemplate);
-      var $counter = $unions.length;
-      var id = 1;
-      for (;id < $counter; id += 2) {
-        if (data.hasOwnProperty($unions[id])) {
-          $unions[id] = data[$unions[id]];
-          console.log("These using Gumok > Happy code!"); 
+    log: function(value) {
+      console.log(value);
+    },
+    error: function(value) {
+      console.error(value);
+    },
+    credits: function() {
+      this.log("CREDITS:" + " " + this.credit.name + " " + this.credit.version);
+      this.log("URL: " + this.credit.code);
+      this.log("------------------------------");
+      this.log("Coded by ( " + this.credit.author + ", " + this.credit.twitter + " | " + this.credit.email + ", 2014 )");
+      this.log("------------------------------");
+    },
+    view: function(element, args){
+      var body = $(element).html();
+      $(element).html(this.seting(body, args));
+    },
+    seting: function(body, data) { 
+      var unions = body.split(this.regex);
+      var count = unions.length;
+      for (var id = 1; id < count; id += 2) {
+        if (data.hasOwnProperty(unions[id])) {
+          unions[id] = data[unions[id]];
+          this.log("These using Gumok!"); 
         } else {
-        	console.log("Error in Template");
+          this.error("Error in Template :(");
         }
       }
-      var segs = $unions.join("");
-      return segs;
+      // return
+      return segs = unions.join(this.reset);
     }
   };
+  
+}(Gumok);
 
-/* App */
-  $gumok.root($(app), {
-    "title" : "This is an example of gumok",
-    "description" : "Now create your beautiful web applications :)",
-  });
-  /* End app */
-
-});
+// Running credits 
+Gumok.credits();
