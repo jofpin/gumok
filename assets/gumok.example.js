@@ -1,5 +1,5 @@
 /* App */
-  Gumok.view("body",{
+  Gumok.view("#example",{
     "title" : "<h1>Gum<span>ok</span></h1>",
     "description" : "Simple template inspired by Django html syntax.",
     "subdescription" : "Has your Web applications, more beautiful with this library!",
