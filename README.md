@@ -11,10 +11,11 @@ hey here Example: [http://codepen.io/jofpin/pen/LFItr](http://codepen.io/jofpin/
 * View page - [http://jofpin.github.io/gumok/](http://jofpin.github.io/gumok/)
 
 ```js
-// Example: This is included in gumok.js
-$gumok.root($("h1"), {
+// Example: This is included in other file .js
+Gumok.view("h1",{
   "title" : "Hello so used gumok"
 });
+
 ```
 
 ```html
