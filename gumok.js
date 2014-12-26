@@ -6,7 +6,7 @@
  * Version: 1.0.2
  *
  * Find the project on GitHub: 
- * https://github.com/jofpin/gumokJS
+ * https://github.com/jofpin/gumok
  *
  * ============================
  * Copyright, 2014 by Jose Pino
