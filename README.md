@@ -11,8 +11,23 @@ I do not recommend to assign values to the label (title), because I'm not sure i
 
 * View page - [http://jofpin.github.io/gumok/](http://jofpin.github.io/gumok/)
 
+
 ```js
-// Example: This is included in other file .js
+// Example
+var data = {
+  firstName: "Jose",
+  lastName:  "Pino"
+};
+
+// Running
+Gumok.view("#example",data);
+
+// view pen: http://codepen.io/jofpin/pen/JoRVGe
+
+```
+
+```js
+// Other Example: This is included in other file .js
 Gumok.view("h1",{
   "title" : "Hello so used gumok"
 });
