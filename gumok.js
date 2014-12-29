@@ -38,7 +38,8 @@ var Gumok = function() {
       this.log("Coded by ( " + this.credit.author + ", " + this.credit.twitter + " | " + this.credit.email + ", 2014 )");
       this.log("------------------------------");
     },
-    view: function(element, args){
+    // The magic starts here...
+    view: function(element, args) {
       var body = $(element).html();
       $(element).html(this.seting(body, args));
     },
@@ -48,8 +49,10 @@ var Gumok = function() {
       for (var id = 1; id < count; id += 2) {
         if (data.hasOwnProperty(unions[id])) {
           unions[id] = data[unions[id]];
+          // If you are using Gumok!
           this.log("These using Gumok!"); 
         } else {
+          // you include the library, but you don't use it :'(
           this.error("Error in Template :(");
         }
       }
