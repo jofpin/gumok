@@ -17,6 +17,7 @@ var Gumok = function() {
   return {
     reset: "",
     regex: /\{{|}\}/,
+    docum: document,
     credit: {
       name: "Gumok",
       version: "1.0.2",
@@ -40,8 +41,10 @@ var Gumok = function() {
     },
     // The magic starts here...
     view: function(element, args) {
-      var body = $(element).html();
-      $(element).html(this.seting(body, args));
+      var query = this.docum.querySelector(element);
+      var body = query.innerHTML;
+      var running = this.seting(body, args);
+      query.innerHTML = running; 
     },
     seting: function(body, data) { 
       var unions = body.split(this.regex);
