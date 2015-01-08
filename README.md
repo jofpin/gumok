@@ -1,7 +1,9 @@
 GumokJS
 ==========
 
-Simple template inspired by Django html syntax.
+Simple and stunning views with template as a chewing gum.
+
+Gumok > is the union of good chewing gum!
 
 You can assign direct values to a single element for example the label div etc.
 I do not recommend to assign values to the label (title), because I'm not sure if it is effective in SEO with that tag.
@@ -13,16 +15,55 @@ I do not recommend to assign values to the label (title), because I'm not sure i
 
 
 ```js
-// Example
+// Example > Solid and normal use with Gumok
 var data = {
-  firstName: "Jose",
-  lastName:  "Pino"
+  firstName: "John",
+  lastName:  "Doe"
 };
 
 // Running
 Gumok.view("#example",data);
 
+
 // view pen: http://codepen.io/jofpin/pen/JoRVGe
+
+```
+
+```js
+// Example > With included views
+var data = {
+  firstName: "John",
+  lastName:  "Doe"
+};
+
+// declare views
+var demo = new Gumok.view("#example", data, {
+  index: function() {
+    document.write("<h2>Executing the view</h2>");
+  },
+  other: function(data) {
+    document.write(data);
+  }
+});
+
+// or use so, the variables included within the stack, as normal use
+/* var demo = new Gumok.view("#example", {
+  firstName: "John",
+  lastName:  "Doe",
+  index: function(data) {
+    document.write("<h2>Executing the view</h2>");
+  },
+  other: function(data) {
+    document.write("<h2>Other</h2>");
+  }
+}); */
+
+// Running view
+demo.index(); 
+// demo.other("<h2>Other</h2>");
+
+
+// view pen: http://codepen.io/jofpin/pen/JoRVGe?editors=101
 
 ```
 
@@ -48,6 +89,6 @@ This publication gave me the idea:
 
 -------------
 
-Copyright, 2014 by [Jose Pino](http://twitter.com/jofpin)
+Copyright, 2014 - 2015 by [Jose Pino](http://twitter.com/jofpin)
 
 -------------
