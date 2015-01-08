@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Gumok &#8250; Simple template</title>
+    <title>Gumok &#8250; Simple and stunning views with template!</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
     <meta name="google" value="notranslate"/>
-    <meta name="author" content="@jofpin"/>
-    <meta name="keywords" content="gumok, template, sintax, html django"/>
-    <meta name="description" content="Gumok. Simple template inspired by Django html syntax."/>
+    <meta name="author" content="Jose Pino, @jofpin"/>
+    <meta name="description" content="Gumok. Simple and stunning views with template as a chewing gum!"/>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/gumok.min.js"></script>
 
     <!-- Favicon & style -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png"> 
@@ -23,27 +21,102 @@
 
 <body>
 
-<div id="example">
+<div class="wrapper">
+    <header class="header">
+        <div class="master-head">
+            <h1 class="title-gumok">Gum<span>ok</span></h1>
+            <p class="description">Simple and stunning views with template as a chewing gum!</p>
+            <p class="description" title="Code"><span>{{</span>var<span>}}</span></p>
+            <a class="btn" href="https://github.com/jofpin/gumok/archive/master.zip">Download</a>
+            <a class="btn" href="https://github.com/jofpin/gumok">Try it now</a>
+        </div>
 
-{{title}}
+        <div data-version="1.0.3" title="Recent version"></div>
 
-<h3>{{description}}</h3>
+        <a href="https://twitter.com/share" class="twitter-share-button tweet" data-url="http://jofpin.github.io/gumok/" data-text="Simple and stunning views with template as a chewing gum!" data-via="jofpin" data-hashtags="gumok">Tweet</a>
+    </header>
 
-<h4>{{subdescription}}</h4>
+    <div class="information">
+        <div class="info">Information</div>
 
-<h5>{{text}}<h5>
+        <div class="text-info">
+            <h2 class="regex">{{ }}</h2>
+            <h2>Efficient</h2>
+            <p>Has your Web applications, more beautiful with this library!</p>
+            <p>I think with gumok the world and you can make very nice web app.</p>
+            <h2>Easy to use</h2>
+            <p>The implementation is very simple, and the display is nice.</p>
+            <h2 class="regex">{{ }}</h2>
+        </div>
 
-{{download}}
+    <div class="demo-example--doc">
+        <h2>Example</h2>
+        <div class="demo-js">
+            <div data-height="370" data-theme-id="6882" data-slug-hash="JoRVGe" data-default-tab="js" data-user="jofpin" class='codepen'>
+<pre><code>// Example &gt; With included views
+var data = {
+  firstName: &quot;John&quot;,
+  lastName:  &quot;Doe&quot;
+};
 
-  <section>
-  <a href="{{url.github}}">
-    <span class="fontawesome-github-alt icon-github" data-library-name="{{file}}"></span>
-  </a>
-  </section>
+// declare views
+var demo = new Gumok.view(&quot;#example&quot;, data, {
+  index: function() {
+    document.write(&quot;&lt;h2&gt;Executing the view&lt;/h2&gt;&quot;);
+  },
+  other: function(data) {
+    document.write(data);
+  }
+});
 
-<p> Copyright, 2014 by <a href="{{url.twitter}}">{{author}}</a> </p>
+// or use so, the variables included within the stack, as normal use
+/* var demo = new Gumok.view(&quot;#example&quot;, {
+  firstName: &quot;John&quot;,
+  lastName:  &quot;Doe&quot;,
+  index: function(data) {
+    document.write(&quot;&lt;h2&gt;Executing the view&lt;/h2&gt;&quot;);
+  },
+  other: function(data) {
+    document.write(&quot;&lt;h2&gt;Other&lt;/h2&gt;&quot;);
+  }
+}); */
+
+// Running view
+demo.index(); 
+// demo.other(&quot;&lt;h2&gt;Other&lt;/h2&gt;&quot;);</code></pre>
+<p>See the Pen <a href='http://codepen.io/jofpin/pen/JoRVGe/'>gumok implementation (template)</a> by Jose Pino (<a href='http://codepen.io/jofpin'>@jofpin</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+</div>
+</div>
 </div>
 
-<script src="assets/gumok.example.js"></script>
+</div> 
+<!-- end wrapper -->
+
+<footer class="footer">
+  <div class="gumok--f">GumokJS</div>
+  <div class="copyright">
+      <div>Copyright © 2014 - 2015 <a href="https://twitter.com/jofpin">Jose Pino</a></div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+
+<!-- Codepen -->
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<!-- Twitter button -->
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
+
+<!-- Google Analytics -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create',"UA-55016284-1");ga('send','pageview');
+</script>
 </body>
 </html>
