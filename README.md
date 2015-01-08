@@ -5,6 +5,8 @@ Simple and stunning views with template as a chewing gum.
 
 Gumok > is the union of good chewing gum!
 
+Has your Web applications, more beautiful with this library!
+
 You can assign direct values to a single element for example the label div etc.
 I do not recommend to assign values to the label (title), because I'm not sure if it is effective in SEO with that tag.
 
