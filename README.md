@@ -1,4 +1,4 @@
-gumokJS
+GumokJS
 =======
 
-Simple template inspired by Django html syntax.
+Simple and stunning views with template as a chewing gum.
