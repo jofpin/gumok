@@ -1,3 +1,4 @@
+$(function() {
 /* scrolling for head */
    var scrollEffect = function() {
     $(window).scroll(function() {
@@ -16,3 +17,5 @@ scrollEffect();
 
 // Awepush 
 Awepush(".header", 4);
+
+});
