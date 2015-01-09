@@ -16,7 +16,7 @@
 var gumok = (function(window, document, undefined) {
   "use strict";
 
-  // Global > The variable, for the expression of the core (Gumok), the hearings aranque | template!
+  // Global > The variable, for the expression of the core (Gumok), the hearings push | template!
   var Gumok = window.Gumok = {};
 
   // setup all (objects) | self = {};
