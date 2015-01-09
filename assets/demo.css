@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Fredoka+One|Roboto);
+
+body {
+  background: #FFF;
+	text-align:center;
+}
+
+.gumok .logo-gumok {
+	text-align: center;
+	display: inline-block;
+	color: #ffffff;
+	margin: 3em auto;
+	width: 6em;
+	height: 6em;
+	padding: 0;
+	border-radius: 50%;
+	background: #ffd464;
+  border: .3em solid #777e8c;
+  -webkit-transition: all .7s ease-out;
+  -moz-transition: all .7s ease-out;
+  -ms-transition: all .7s ease-out;
+  transition: all .7s ease-out;
+}
+
+.gumok .name {
+  display: block;
+  text-align: center;
+	font-family: "Fredoka One",sans-serif;
+  font-weight: normal;
+	font-size: 6em; 
+  color: #ffd464;
+	margin: 0 auto;
+  text-shadow: 1px 1px rgba(0,0,0,0.25);
+}
+.gumok .name span.ok {
+  color: #777e8c;
+}
+
+.gumok .description {
+  font-family: "Roboto",sans-serif;
+  font-weight: 600;
+  margin: .5em auto;
+  font-size: 1.2em;
+  line-height: 2em;
+  color: #222;
+}
+.gumok .letter-g {
+	font-family: "Fredoka One",sans-serif;
+  font-weight: normal;
+	font-size: 4em; 
+	margin: 0;
+	padding-top: 10px;
+  text-shadow: 1px 1px rgba(0,0,0,0.25);
+}
