@@ -1,5 +1,6 @@
 GumokJS
 ==========
+[![Gitter chat](https://badges.gitter.im/jofpin/gumok.png)](https://gitter.im/jofpin/gumok)
 
 Simple and stunning views with template as a chewing gum.
 
