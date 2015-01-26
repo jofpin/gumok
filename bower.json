@@ -1,0 +1,16 @@
+{
+  "name": "gumok",
+  "main": "gumok.js",
+  "version": "1.0.3",
+  "description": "Simple and stunning tempting system",
+  "keywords": [
+    "JavaScript",
+    "Templating",
+    "Views"
+  ],
+  "authors": [
+    "Jose Pino"
+  ],
+  "license": "MIT",
+  "homepage": "http://jofpin.github.io/gumok/"
+}
