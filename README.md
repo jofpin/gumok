@@ -16,6 +16,11 @@ I do not recommend to assign values to the label (title), because I'm not sure i
 
 * View page - [http://jofpin.github.io/gumok/](http://jofpin.github.io/gumok/)
 
+## Installation
+
+-   Clone `git clone https://github.com/jofpin/gumok.git`
+-   [Download the latest version](https://github.com/jofpin/gumok/archive/master.zip)
+-   Install with Bower: `bower install gumok`
 
 ```js
 // Example > Solid and normal use with Gumok
