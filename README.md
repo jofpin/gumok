@@ -1,6 +1,7 @@
 GumokJS
 ==========
-[![Gitter chat](https://badges.gitter.im/jofpin/gumok.png)](https://gitter.im/jofpin/gumok) [![views](https://sourcegraph.com/api/repos/github.com/jofpin/gumok/.counters/views.png)](https://sourcegraph.com/github.com/jofpin/gumok) <img src="http://i.imgur.com/Cj6cWkp.png" width="130" height="30">
+[![Gitter chat](https://badges.gitter.im/jofpin/gumok.png)](https://gitter.im/jofpin/gumok) [![views](https://sourcegraph.com/api/repos/github.com/jofpin/gumok/.counters/views.png)](https://sourcegraph.com/github.com/jofpin/gumok)
+[![Bower version](https://badge.fury.io/bo/gumok.svg)](http://badge.fury.io/bo/gumok)
 
 
 Simple and stunning views with template as a chewing gum.
