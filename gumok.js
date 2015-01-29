@@ -4,7 +4,8 @@
  *
  * Simple and stunning views with template as a chewing gum.
  * Version: 1.0.3
- *
+ * Total lines: 74
+ * 
  * Find the project on GitHub: 
  * https://github.com/jofpin/gumok
  *
