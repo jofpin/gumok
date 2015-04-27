@@ -2,6 +2,8 @@ GumokJS
 ==========
 [![Gitter chat](https://badges.gitter.im/jofpin/gumok.png)](https://gitter.im/jofpin/gumok) [![views](https://sourcegraph.com/api/repos/github.com/jofpin/gumok/.counters/views.png)](https://sourcegraph.com/github.com/jofpin/gumok)
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jofpin/gumok?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Simple and stunning views with template as a chewing gum.
 
 Gumok > is the union of good chewing gum!
